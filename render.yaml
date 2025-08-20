@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: portfolio-website
+    env: static
+    plan: free
+    buildCommand: ""
+    staticPublishPath: .
+    autoDeploy: true
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /styles.css
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: /script.js
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
