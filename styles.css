@@ -31,6 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -73,6 +74,8 @@ img {
 .section {
     padding: 6rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    z-index: 10;
 }
 
 .section-title {
@@ -128,6 +131,7 @@ img {
 .nav-links {
     display: flex;
     gap: 3rem;
+    background: transparent;
 }
 
 .nav-links a {
@@ -254,6 +258,10 @@ img {
     cursor: pointer;
     border: none;
     font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary {
@@ -285,7 +293,6 @@ img {
     gap: 2px;
     /* Tight gaps for panel look */
     background: rgba(255, 255, 255, 0.1);
-    /* Border color essentially */
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -355,7 +362,7 @@ img {
     font-weight: 700;
 }
 
-/* ===== PROJECTS (Telemetry Cards) ===== */
+/* ===== PROJECTS / EXPERIENCE CARDS ===== */
 .project-list {
     display: flex;
     flex-direction: column;
@@ -412,6 +419,262 @@ img {
     margin-bottom: 2rem;
 }
 
+/* ===== PODIUM SECTION ===== */
+.podium-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 4rem;
+    height: 500px;
+    /* Increased height for images */
+}
+
+.podium-step {
+    flex: 1;
+    max-width: 300px;
+    background: var(--racing-dark-grey);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: default;
+    overflow: hidden;
+}
+
+.podium-step:hover {
+    border-color: var(--racing-red);
+    transform: translateY(-5px);
+    z-index: 2;
+    background: #222;
+}
+
+.podium-step.rank-1 {
+    height: 100%;
+    border-top: 5px solid var(--racing-red);
+    order: 2;
+}
+
+.podium-step.rank-2 {
+    height: 85%;
+    border-top: 5px solid silver;
+    /* Fixed invalid color */
+    order: 1;
+}
+
+.podium-step.rank-3 {
+    height: 75%;
+    border-top: 5px solid #cd7f32;
+    order: 3;
+}
+
+.podium-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.podium-step:hover .podium-image {
+    opacity: 1;
+}
+
+.trophy-icon {
+    font-size: 2.5rem;
+    margin-top: -1.25rem;
+    background: var(--racing-black);
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--racing-red);
+    color: var(--racing-red);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: absolute;
+    top: 90px;
+}
+
+.rank-2 .trophy-icon {
+    color: silver;
+    border-color: silver;
+}
+
+.rank-3 .trophy-icon {
+    color: #cd7f32;
+    border-color: #cd7f32;
+}
+
+.podium-content {
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.podium-title {
+    font-family: var(--font-header);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.podium-desc {
+    font-size: 0.9rem;
+    color: var(--racing-silver);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.podium-step:hover .podium-desc {
+    opacity: 1;
+}
+
+.podium-rank {
+    font-size: 5rem;
+    font-family: var(--font-header);
+    opacity: 0.05;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/* ===== EDUCATION / ACADEMY SECTION ===== */
+.academy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.academy-card {
+    background: var(--racing-dark-grey);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    position: relative;
+    border-left: 2px solid var(--racing-red);
+}
+
+.academy-card h3 {
+    font-family: var(--font-header);
+    font-size: 1.8rem;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--racing-white);
+    margin-bottom: 0.5rem;
+}
+
+.academy-card p {
+    color: var(--racing-silver);
+    margin-bottom: 1rem;
+}
+
+/* ===== ACHIEVEMENT CARDS ===== */
+.achievement-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: border-color 0.3s;
+}
+
+.achievement-card:hover {
+    border-color: var(--racing-red);
+}
+
+.achievement-icon {
+    font-size: 2rem;
+    color: var(--racing-silver);
+}
+
+.achievement-info h4 {
+    font-family: var(--font-header);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    color: #fff;
+}
+
+.achievement-info span {
+    font-family: var(--font-header);
+    color: var(--racing-red);
+    font-weight: 700;
+}
+
+/* ===== CONTACT FORM (Pit Stop Log) ===== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info h3 {
+    font-family: var(--font-header);
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-form-box {
+    background: var(--racing-dark-grey);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 5px solid var(--racing-red);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-header);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    color: var(--racing-silver);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--racing-red);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
 /* ===== FOOTER ===== */
 footer {
     background: #000;
@@ -438,26 +701,32 @@ footer {
 
 .socials a {
     color: var(--racing-silver);
-    font-size: 1.5rem;
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .socials a:hover {
     color: var(--racing-red);
+    transform: translateY(-5px);
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
+
+    .grid-container,
+    .academy-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
 
-    .project-card {
+    .grid-container,
+    .academy-grid,
+    .contact-grid,
+    .project-card,
+    .achievement-grid {
         grid-template-columns: 1fr;
     }
 
@@ -473,5 +742,41 @@ footer {
 
     .nav-toggle {
         display: block;
+    }
+
+    .podium-container {
+        flex-direction: column;
+        height: auto;
+        align-items: stretch;
+    }
+
+    .podium-step {
+        width: 100%;
+        max-width: none;
+        height: auto !important;
+        margin-bottom: 1rem;
+        order: unset !important;
+        /* Stack normally on mobile */
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 5px solid var(--racing-red);
+    }
+
+    .podium-step.rank-2 {
+        border-left-color: silver;
+    }
+
+    .podium-step.rank-3 {
+        border-left-color: #cd7f32;
+    }
+
+    .trophy-icon {
+        position: relative;
+        top: -1.5rem;
+        margin-bottom: -1.5rem;
+    }
+
+    .podium-image {
+        display: none;
+        /* Hide images on mobile for compactness if preferred, or keep */
     }
 }

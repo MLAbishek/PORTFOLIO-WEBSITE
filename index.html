@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abishek J | Engineer.01</title>
-
+    <!-- Racing Fonts: Oswald (Headlines), Rajdhani (Technical Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Rajdhani:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome including brands (check version support for LeetCode or use custom SVG if needed, FA v6 usually has basic icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
@@ -24,10 +26,10 @@
                 <a href="#">ABISHEK<span> J</span></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">Specs</a></li>
                 <li><a href="#experience">Career</a></li>
-                <li><a href="#projects">Circuits</a></li>
                 <li><a href="#education">Academy</a></li>
+                <li><a href="#projects">Circuits</a></li>
+                <li><a href="#podium">Podium</a></li>
                 <li><a href="#contact">Pit Stop</a></li>
             </ul>
             <div class="nav-toggle">
@@ -40,7 +42,7 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="hero-label">AI Engineering</span>
+                <span class="hero-label">ML/DL Enthusiast</span>
                 <h1>
                     Performance
                     <br><span>Driven</span>
@@ -53,57 +55,6 @@
                 <div class="hero-btns">
                     <a href="#projects" class="btn btn-primary">Start Engine</a>
                     <a href="#contact" class="btn btn-secondary">Contact</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SPECS / SKILLS -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Specs</h2>
-
-            <div class="grid-container">
-                <!-- Spec 1 -->
-                <div class="grid-item">
-                    <i class="fas fa-microchip grid-icon"></i>
-                    <h3>Deep Learning</h3>
-                    <div class="metric-box">
-                        <span class="metric-label">Focus</span>
-                        <span class="metric-value">Vision & NLP</span>
-                    </div>
-                    <div class="metric-box">
-                        <span class="metric-label">Architecture</span>
-                        <span class="metric-value">YOLOv8 / Transf.</span>
-                    </div>
-                </div>
-
-                <!-- Spec 2 -->
-                <div class="grid-item">
-                    <i class="fas fa-code grid-icon"></i>
-                    <h3>Programming</h3>
-                    <div class="metric-box">
-                        <span class="metric-label">Languages</span>
-                        <span class="metric-value">Python, Java</span>
-                    </div>
-                    <div class="metric-box">
-                        <span class="metric-label">Libs</span>
-                        <span class="metric-value">Scikit,TensorFlow,Pytorch</span>
-                    </div>
-                </div>
-
-                <!-- Spec 3 -->
-                <div class="grid-item">
-                    <i class="fas fa-cogs grid-icon"></i>
-                    <h3>ML Ops</h3>
-                    <div class="metric-box">
-                        <span class="metric-label">Deploy</span>
-                        <span class="metric-value">Docker</span>
-                    </div>
-                    <div class="metric-box">
-                        <span class="metric-label">Version</span>
-                        <span class="metric-value">Git / GitHub</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -123,8 +74,6 @@
                         <p style="margin-bottom: 0.5rem; color: #fff;">India</p>
                         <ul
                             style="color: var(--racing-silver); list-style: square; padding-left: 1.2rem; margin-top: 1rem;">
-                            <li>Designed and Developed and end-to-end Deepfake detection Model using MarlinEncoder and
-                                Artificial Neural Network</li>
                             <li>Developed a Deepfake Detection model using YOLOv8, trained on COCO dataset and custom
                                 bounding-box annotations.</li>
                             <li>Designed an end-to-end detection pipeline with custom augmentation and pooling layers
@@ -142,11 +91,48 @@
                         <p style="margin-bottom: 0.5rem; color: #fff;">Germany (Remote)</p>
                         <ul
                             style="color: var(--racing-silver); list-style: square; padding-left: 1.2rem; margin-top: 1rem;">
-                            <li>Worked on a large-scale solar panel project contributing to
+                            <li>Collaborated with Swiss Government on a large-scale solar panel project contributing to
                                 sustainable energy solutions.</li>
                             <li>Gained exposure to large-scale industrial operations through projects with MAERSK.</li>
                             <li>Prepared and presented detailed proposals backed by extensive research.</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMY (SEPARATE EDUCATION) -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Academy</h2>
+
+            <div class="academy-grid">
+                <!-- Degree -->
+                <div class="academy-card">
+                    <h3>B.Tech AI/ML</h3>
+                    <p>St. Joseph's College of Engineering</p>
+                    <div class="metric-box" style="margin-top: 1rem; border-color: rgba(255,255,255,0.05);">
+                        <span class="metric-label">Status</span>
+                        <span class="metric-value">Expected 2027</span>
+                    </div>
+                    <div class="metric-box" style="margin-top: 0.5rem; border-color: rgba(255,255,255,0.05);">
+                        <span class="metric-label">CGPA</span>
+                        <span class="metric-value">8.87</span>
+                    </div>
+                </div>
+
+                <!-- School -->
+                <div class="academy-card" style="border-left-color: var(--racing-silver);">
+                    <h3>Senior Secondary</h3>
+                    <p>Pon Vidyasharam Unique School</p>
+                    <div class="metric-box" style="margin-top: 1rem; border-color: rgba(255,255,255,0.05);">
+                        <span class="metric-label">Year</span>
+                        <span class="metric-value">2023 - 2024</span>
+                    </div>
+                    <div class="metric-box" style="margin-top: 0.5rem; border-color: rgba(255,255,255,0.05);">
+                        <span class="metric-label">Score</span>
+                        <span class="metric-value">83.4%</span>
                     </div>
                 </div>
             </div>
@@ -168,9 +154,8 @@
                         <h3>Skin Disease Detector</h3>
                         <p>Developed a CNN-based model integration to detect skin disease presence. Applied data
                             augmentation, normalization, and Adam optimization for enhanced precision.</p>
-                        <a href="https://github.com/MLAbishek/SKIN_DISEASE_LATEST" target="_blank"
-                            class="btn btn-secondary" style="width: fit-content;"><i class="fab fa-github"></i> View
-                            Code</a>
+                        <a href="https://github.com/MLAbishek" target="_blank" class="btn btn-secondary"
+                            style="width: fit-content;"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
@@ -182,8 +167,8 @@
                         <div class="project-meta">Transformers | LangChain</div>
                         <h3>Mental Health Analysis</h3>
                         <p>Platform predicting mood from spoken/typed content. Features an AI Companion chatbot, calm
-                            music, and breathing exercises. Leveraged Mistral Model.</p>
-                        <a href="https://github.com/MLAbishek/mental" target="_blank" class="btn btn-secondary"
+                            music, and breathing exercises. Leveraged Mistral LangChain.</p>
+                        <a href="https://github.com/MLAbishek" target="_blank" class="btn btn-secondary"
                             style="width: fit-content;"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
@@ -197,90 +182,146 @@
                         <h3>Water Quality Classifier</h3>
                         <p>Classifier system helping to evaluate water cleanliness using scientific parameters.
                             Implemented DecisionTreeClassifier achieving solid validation performance.</p>
-                        <a href="https://github.com/iwinalbert/Water-Cleanliness-Prediction-ML-Web-App" target="_blank"
-                            class="btn btn-secondary" style="width: fit-content;"><i class="fab fa-github"></i> View
-                            Code</a>
+                        <a href="https://github.com/MLAbishek" target="_blank" class="btn btn-secondary"
+                            style="width: fit-content;"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EDUCATION & ACHIEVEMENTS -->
-    <section id="education" class="section">
+    <!-- PODIUM & ACHIEVEMENTS -->
+    <section id="podium" class="section">
         <div class="container">
-            <h2 class="section-title">Driver Academy & Podiums</h2>
+            <h2 class="section-title">Championships</h2>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;" class="grid-container-mobile">
-                <!-- Education -->
-                <div
-                    style="background: var(--racing-dark-grey); padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
-                    <h3
-                        style="font-family: var(--font-header); text-transform: uppercase; font-style: italic; color: var(--racing-red); margin-bottom: 1.5rem;">
-                        Education</h3>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: #fff; font-size: 1.2rem; text-transform: uppercase;">B.Tech AI/ML</h4>
-                        <p style="color: var(--racing-silver);">St. Joseph's College of Engineering</p>
-                        <div class="metric-box" style="margin-top: 0.5rem; border-color: rgba(255,255,255,0.05);">
-                            <span class="metric-label">CGPA</span>
-                            <span class="metric-value">8.73</span>
-                        </div>
-                        <p style="color: var(--racing-silver); font-size: 0.9rem; margin-top: 0.5rem;">Expected 2027</p>
+            <div class="podium-container">
+                <!-- Rank 2 -->
+                <div class="podium-step rank-2">
+                    <img src="https://placehold.co/400x200/222/FFF?text=Hack-O-Mania" class="podium-image"
+                        alt="Hack-O-Mania">
+                    <i class="fas fa-medal trophy-icon"></i>
+                    <div class="podium-content">
+                        <h3 class="podium-title">Hack-O-Mania</h3>
+                        <p class="podium-desc">2nd Place (32 Teams)</p>
+                        <p class="podium-desc" style="margin-top:0.5rem;">Intra-college</p>
                     </div>
+                    <div class="podium-rank">2</div>
+                </div>
 
-                    <div>
-                        <h4 style="color: #fff; font-size: 1.2rem; text-transform: uppercase;">Senior Secondary</h4>
-                        <p style="color: var(--racing-silver);">Pon Vidyasharam Unique School</p>
-                        <div class="metric-box" style="margin-top: 0.5rem; border-color: rgba(255,255,255,0.05);">
-                            <span class="metric-label">Score</span>
-                            <span class="metric-value">83.4%</span>
-                        </div>
-                        <p style="color: var(--racing-silver); font-size: 0.9rem; margin-top: 0.5rem;">2023 - 2024</p>
+                <!-- Rank 1 -->
+                <div class="podium-step rank-1">
+                    <img src="https://placehold.co/400x200/red/FFF?text=SAP+HackFest" class="podium-image"
+                        alt="SAP HackFest">
+                    <i class="fas fa-trophy trophy-icon"></i>
+                    <div class="podium-content">
+                        <h3 class="podium-title">SAP HackFest</h3>
+                        <p class="podium-desc">Finalist (Top 70/5200+)</p>
+                        <p class="podium-desc" style="margin-top:0.5rem;">Major Event 2025</p>
+                    </div>
+                    <div class="podium-rank">1</div>
+                </div>
+
+                <!-- Rank 3 -->
+                <div class="podium-step rank-3">
+                    <img src="https://placehold.co/400x200/333/FFF?text=ProjectFest" class="podium-image"
+                        alt="ProjectFest">
+                    <i class="fas fa-award trophy-icon"></i>
+                    <div class="podium-content">
+                        <h3 class="podium-title">PROJECTFEST-24</h3>
+                        <p class="podium-desc">Top 5 (110 Teams)</p>
+                        <p class="podium-desc" style="margin-top:0.5rem;">Innovation</p>
+                    </div>
+                    <div class="podium-rank">3</div>
+                </div>
+            </div>
+
+            <!-- HIGHLIGHTED OTHER EVENTS -->
+            <h3
+                style="font-family: var(--font-header); text-transform: uppercase; margin-top: 5rem; margin-bottom: 2rem; color: var(--racing-silver); font-style: italic; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+                Honorable Mentions</h3>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-flag-checkered"></i></div>
+                    <div class="achievement-info">
+                        <h4>Sustain-AI-thon</h4>
+                        <p>Ranked <span>Top 15</span> / 100+ Teams</p>
                     </div>
                 </div>
 
-                <!-- Achievements -->
-                <div
-                    style="background: var(--racing-dark-grey); padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
-                    <h3
-                        style="font-family: var(--font-header); text-transform: uppercase; font-style: italic; color: var(--racing-red); margin-bottom: 1.5rem;">
-                        Achievements</h3>
-                    <ul style="color: var(--racing-silver); list-style: none;">
-                        <li
-                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
-                            <i class="fas fa-trophy" style="color: var(--racing-red); margin-right: 0.5rem;"></i>
-                            Finalist: SAP HackFest 2025 (Top 70/5200+)
-                        </li>
-                        <li
-                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
-                            <i class="fas fa-medal" style="color: var(--racing-white); margin-right: 0.5rem;"></i>
-                            2nd Place: Hack-O-Mania (32 teams)
-                        </li>
-                        <li
-                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
-                            <i class="fas fa-star" style="color: var(--racing-silver); margin-right: 0.5rem;"></i>
-                            Top 5: PROJECTFEST-24 (110 teams)
-                        </li>
-                        <li
-                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
-                            <i class="fas fa-flag-checkered"
-                                style="color: var(--racing-red); margin-right: 0.5rem;"></i>
-                            Top 15: Sustain-AI-thon (100+ teams)
-                        </li>
-                        <li>
-                            <i class="fas fa-flag-checkered"
-                                style="color: var(--racing-red); margin-right: 0.5rem;"></i>
-                            Top 8: Datathon (250+ teams)
-                        </li>
-                    </ul>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="achievement-info">
+                        <h4>Datathon</h4>
+                        <p>Ranked <span>Top 8</span> / 250+ Teams</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Pit Stop / Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Init Communication</h3>
+                    <p style="color: var(--racing-silver); margin-bottom: 2rem;">
+                        Ready to deploy? Send a transmission directly to my inbox. I am available for internships,
+                        research collaborations, and engineering roles.
+                    </p>
+                    <div class="metric-box">
+                        <span class="metric-label">Email</span>
+                        <span class="metric-value"><a
+                                href="mailto:j.abishek3123@gmail.com">j.abishek3123@gmail.com</a></span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-label">Location</span>
+                        <span class="metric-value">Chennai, IN</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-label">Status</span>
+                        <span class="metric-value" style="color:#0f0;">Online</span>
+                    </div>
+
+                    <div class="socials" style="justify-content: flex-start; margin-top: 2rem;">
+                        <a href="https://github.com/MLAbishek" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/j-abishek-007-525713d/" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="mailto:j.abishek3123@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://leetcode.com/u/abishek_3123/" target="_blank" title="LeetCode"><span
+                                class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-box">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">Driver Name</label>
+                            <input type="text" name="name" class="form-input" required placeholder="ENTER NAME">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Comms Channel (Email)</label>
+                            <input type="email" name="email" class="form-input" required placeholder="ENTER EMAIL">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Transmission</label>
+                            <textarea name="message" class="form-textarea" required
+                                placeholder="ENTER MESSAGE"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Transmission</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-logo">ABISHEK<span style="color:var(--racing-red);"> J</span></div>
             <p style="color:var(--racing-silver); margin-bottom:2rem; letter-spacing:1px; text-transform:uppercase;">
@@ -291,6 +332,8 @@
                 <a href="https://www.linkedin.com/in/j-abishek-007-525713d/" target="_blank"><i
                         class="fab fa-linkedin"></i></a>
                 <a href="mailto:j.abishek3123@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://leetcode.com/u/abishek_3123/" target="_blank"><span class="iconify"
+                        data-icon="simple-icons:leetcode" data-inline="false"></span></a>
             </div>
         </div>
     </footer>
