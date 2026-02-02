@@ -1,299 +1,202 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abishek J - AI & Machine Learning Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <title>Abishek J | Engineer.01</title>
+    <!-- Racing Fonts: Oswald (Headlines), Rajdhani (Technical Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Rajdhani:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header / Resume Top -->
-    <header class="resume-header">
-        <div class="container nav-container"
-            style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
-            <div style="display:flex;align-items:center;gap:1rem;">
-                <div style="font-weight:700;font-size:2.4rem;">ABISHEK J</div>
-                <div style="font-size:1.4rem;color:var(--grey);">AI & Machine Learning Engineer</div>
-            </div>
-            <div style="text-align:right;font-size:1.4rem;color:var(--grey);">
-                <div>+91 7338755146 &middot; Chennai, Tamil Nadu, India</div>
-                <div><a href="mailto:j.abishek3123@gmail.com">j.abishek3123@gmail.com</a> &middot; <a
-                        href="https://www.linkedin.com/in/j-abishek-007-525713d/" target="_blank">LinkedIn</a> &middot;
-                    <a href="https://github.com/MLAbishek" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Navigation (keeps previous structure for styling/JS) -->
+    <!-- NAV -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <a href="#home">AJ</a>
+                <a href="#">ABISHEK<span>.SCUDERIA</span></a>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#home">Telemetry</a></li>
+                <li><a href="#expertise">Specs</a></li>
+                <li><a href="#projects">Circuits</a></li>
+                <li><a href="#contact">Pit Stop</a></li>
             </ul>
-            <div class="theme-toggle">
-                <button id="themeToggle" class="theme-toggle-btn">
-                    <i class="fas fa-moon"></i>
-                </button>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <!-- Hero / Summary -->
-    <section id="home" class="hero section">
-        <div class="container hero-container">
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container">
             <div class="hero-content">
-                <h1>Hello, I'm <span class="highlight gradient-text">Abishek J</span></h1>
-                <h2>AI & Machine Learning Engineer</h2>
-                <p>Building intelligent solutions in deep learning, computer vision and NLP. Currently focused on
-                    deepfake detection, model deployment and research-driven engineering.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="img-wrapper">
-                    <img src="./images/my_face.jpeg" alt="Abishek J" class="profile-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About / Experience Preview -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="about-img-wrapper">
-                        <img src="./images/win.jpeg" alt="About Abishek J">
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p>I am a Machine Learning Engineer pursuing B.Tech in Artificial Intelligence & Machine Learning at
-                        St. Joseph's College of Engineering. I have hands-on experience in deep learning, computer
-                        vision,
-                        and NLP. I enjoy building production-ready models and research prototypes that solve real-world
-                        problems.</p>
-                    <a href="#experience" class="btn btn-primary">See Experience</a>
+                <span class="hero-label">AI Engineering</span>
+                <h1>
+                    Performance
+                    <br><span>Driven</span>
+                    <br>Intelligence
+                </h1>
+                <p>
+                    Precision engineering in Deep Learning, Computer Vision, and NLP. Building high-velocity models that
+                    deploy and scale.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Start Engine</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="skills section">
+    <!-- SPECS / SKILLS (The Grid) -->
+    <section id="expertise" class="section">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-grid">
-                        <div class="skill-card">
-                            <h4>Python</h4>
-                            <p>TensorFlow, Scikit-learn, NumPy, Pandas, Flask</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>Deep Learning</h4>
-                            <p>Computer Vision, YOLO, Xception, Data Augmentation</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>ML Ops & Tools</h4>
-                            <p>Model Deployment, COCO dataset prep, Git, Docker (familiar)</p>
-                        </div>
+            <h2 class="section-title">Technical Specs</h2>
+
+            <div class="grid-container">
+                <!-- Spec 1 -->
+                <div class="grid-item">
+                    <i class="fas fa-microchip grid-icon"></i>
+                    <h3>Deep Learning</h3>
+                    <div class="metric-box">
+                        <span class="metric-label">Focus</span>
+                        <span class="metric-value">Vision & NLP</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-label">Tools</span>
+                        <span class="metric-value">PyTorch / TF</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="soft-skills">
-                        <span class="soft-skill-tag">Problem Solving</span>
-                        <span class="soft-skill-tag">Communication</span>
-                        <span class="soft-skill-tag">Teamwork</span>
-                        <span class="soft-skill-tag">Time Management</span>
+                <!-- Spec 2 -->
+                <div class="grid-item">
+                    <i class="fas fa-code grid-icon"></i>
+                    <h3>Python Core</h3>
+                    <div class="metric-box">
+                        <span class="metric-label">Efficiency</span>
+                        <span class="metric-value">High</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="experience section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2024 - May 2025</div>
-                        <h3>Deep Learning Intern — Authenta AI</h3>
-                        <h4>India</h4>
-                        <ul>
-                            <li>Worked on a deepfake detection pipeline using YOLO (v8) to detect faces and generate
-                                COCO-style
-                                datasets for training.</li>
-                            <li>Developed end-to-end deepfake detection models using custom augmentations and pooling
-                                functions with Xception backbones.</li>
-                            <li>Prepared data and bounding box annotations, trained models and evaluated performance on
-                                benchmarks.</li>
-                        </ul>
+                    <div class="metric-box">
+                        <span class="metric-label">Libraries</span>
+                        <span class="metric-value">Pandas / NumPy</span>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">May 2025 - Jul 2025</div>
-                        <h3>AI Research Intern — Foviotech</h3>
-                        <h4>Germany (Remote)</h4>
-                        <ul>
-                            <li>Researched and developed AI-driven strategies for industrial clients including MAERSK.
-                            </li>
-                            <li>Explored applications of machine learning and drone technology to solve operational
-                                challenges.</li>
-                        </ul>
+                <!-- Spec 3 -->
+                <div class="grid-item">
+                    <i class="fas fa-cogs grid-icon"></i>
+                    <h3>ML Ops</h3>
+                    <div class="metric-box">
+                        <span class="metric-label">Deploy</span>
+                        <span class="metric-value">Docker</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-label">Version</span>
+                        <span class="metric-value">Git / CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- Spec 4 -->
+                <div class="grid-item">
+                    <i class="fas fa-eye grid-icon"></i>
+                    <h3>Computer Vision</h3>
+                    <div class="metric-box">
+                        <span class="metric-label">Model</span>
+                        <span class="metric-value">YOLO / CNNs</span>
+                    </div>
+                </div>
+
+                <!-- Spec 5 -->
+                <div class="grid-item">
+                    <i class="fas fa-database grid-icon"></i>
+                    <h3>Data Eng</h3>
+                    <div class="metric-box">
+                        <span class="metric-label">Dataset</span>
+                        <span class="metric-value">COCO / Custom</span>
+                    </div>
+                </div>
+
+                <!-- Spec 6 -->
+                <div class="grid-item">
+                    <i class="fas fa-tachometer-alt grid-icon"></i>
+                    <h3>Optimization</h3>
+                    <div class="metric-box">
+                        <span class="metric-label">Speed</span>
+                        <span class="metric-value">Real-time</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="projects section">
+    <!-- CIRCUITS / PROJECTS -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+            <h2 class="section-title">Track Record</h2>
+
+            <div class="project-list">
+                <!-- Project 1 -->
                 <div class="project-card">
+                    <img src="https://placehold.co/600x400/900/FFF?text=Skin+Analysis" class="project-img"
+                        alt="Skin Disease">
                     <div class="project-content">
+                        <div class="project-meta">Circuit: Medical AI</div>
                         <h3>Skin Disease Detector</h3>
-                        <p>Developed a website using convolutional neural networks to detect and classify skin diseases.
-                            One model detected irregularities; another classified Melanoma, Nevus and Seborrheic
-                            Keratosis. Training runs achieved high accuracy on validation data.</p>
+                        <p>High-precision diagnostic engine using CNNs to classify Melanoma. Engineered for accuracy and
+                            speed in clinical environments.</p>
+                        <a href="#" class="btn btn-secondary" style="width: fit-content;">View Telemetry</a>
                     </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="project-card">
+                    <img src="https://placehold.co/600x400/900/FFF?text=Mental+Health" class="project-img"
+                        alt="Mental Health">
                     <div class="project-content">
+                        <div class="project-meta">Circuit: NLP & LLM</div>
                         <h3>Mental Health Analysis</h3>
-                        <p>Built a web app to predict mood from text/speech and provide an AI companion chatbot, calming
-                            music and breathing exercises. Used Transformers for classification and large language
-                            models with LangChain for the companion bot.</p>
+                        <p>Multimodal system predicting mood states from voice and text input. Features an integrated
+                            LLM-powered co-pilot for therapeutic support.</p>
+                        <a href="#" class="btn btn-secondary" style="width: fit-content;">View Telemetry</a>
                     </div>
                 </div>
 
+                <!-- Project 3 -->
                 <div class="project-card">
+                    <img src="https://placehold.co/600x400/900/FFF?text=Deepfake+Ops" class="project-img"
+                        alt="Deepfake">
                     <div class="project-content">
-                        <h3>Water Quality Classifier</h3>
-                        <p>Website that classifies water cleanliness based on scientific parameters using Decision Tree
-                            Classifier. Achieved ~86% accuracy on test data.</p>
+                        <div class="project-meta">Circuit: Security</div>
+                        <h3>Deepfake Detection</h3>
+                        <p>Authenta AI pipeline utilizing YOLOv8 and Xception backbones for synthetic media
+                            identifcation. Robust data augmentation strategies deployed.</p>
+                        <a href="#" class="btn btn-secondary" style="width: fit-content;">View Telemetry</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements -->
-    <section id="achievements" class="achievements section">
+    <!-- FOOTER -->
+    <footer id="contact">
         <div class="container">
-            <h2 class="section-title">Achievements</h2>
-            <ul class="achievements-list">
-                <li>Finalist in SAP HackFest 2025 (top 70 out of 5200+ teams)</li>
-                <li>Winner: Intra-college Hack-O-Mania (2nd place) and PROJECTFEST-24 (top 5)</li>
-                <li>Top 15 in Sustain-AI-thon; Top 8 in Datathon (out of 250+ teams)</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="education section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <h4>B.Tech in Artificial Intelligence and Machine Learning</h4>
-                <p>St. Joseph's College of Engineering &middot; Expected 2027</p>
-                <p>Current CGPA: 8.87</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="certifications section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <ul class="certification-list">
-                <li><a href="#">Coursera Machine Learning Specialization</a></li>
-                <li><a href="#">Infosys Springboard Data Science Foundation</a></li>
-                <li><a href="#">Oracle Cloud Infrastructure 2025 - Generative AI Professional</a></li>
-                <li><a href="#">Udemy: Machine Learning with Python and R &amp; ChatGPT (2024)</a></li>
-                <li><a href="#">NPTEL: Python for Data Science (Silver medal)</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact section">
-        <div class="container contact-container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>Get in touch</h3>
-                    <p>Email: <a href="mailto:j.abishek3123@gmail.com">j.abishek3123@gmail.com</a></p>
-                    <p>Phone: +91 7338755146</p>
-                    <p>Location: Chennai, Tamil Nadu, India</p>
-                </div>
-
-                <form class="contact-form" action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer section">
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <h3>ABISHEK J</h3>
-                <p>AI & Machine Learning Engineer</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://github.com/MLAbishek" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/j-abishek-007-525713d/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
+            <div class="footer-logo">ABISHEK<span style="color:var(--racing-red);">.SCUDERIA</span></div>
+            <p style="color:var(--racing-silver); margin-bottom:2rem; letter-spacing:1px; text-transform:uppercase;">
+                Engineering Intelligence from Chennai, India
+            </p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
