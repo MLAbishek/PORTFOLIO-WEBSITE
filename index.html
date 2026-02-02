@@ -21,12 +21,13 @@
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <a href="#">ABISHEK<span>.SCUDERIA</span></a>
+                <a href="#">ABISHEK<span> J</span></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Telemetry</a></li>
-                <li><a href="#expertise">Specs</a></li>
+                <li><a href="#about">Specs</a></li>
+                <li><a href="#experience">Career</a></li>
                 <li><a href="#projects">Circuits</a></li>
+                <li><a href="#education">Academy</a></li>
                 <li><a href="#contact">Pit Stop</a></li>
             </ul>
             <div class="nav-toggle">
@@ -57,8 +58,8 @@
         </div>
     </section>
 
-    <!-- SPECS / SKILLS (The Grid) -->
-    <section id="expertise" class="section">
+    <!-- SPECS / SKILLS -->
+    <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">Technical Specs</h2>
 
@@ -72,22 +73,22 @@
                         <span class="metric-value">Vision & NLP</span>
                     </div>
                     <div class="metric-box">
-                        <span class="metric-label">Tools</span>
-                        <span class="metric-value">PyTorch / TF</span>
+                        <span class="metric-label">Architecture</span>
+                        <span class="metric-value">YOLOv8 / Transf.</span>
                     </div>
                 </div>
 
                 <!-- Spec 2 -->
                 <div class="grid-item">
                     <i class="fas fa-code grid-icon"></i>
-                    <h3>Python Core</h3>
+                    <h3>Programming</h3>
                     <div class="metric-box">
-                        <span class="metric-label">Efficiency</span>
-                        <span class="metric-value">High</span>
+                        <span class="metric-label">Languages</span>
+                        <span class="metric-value">Python, Java</span>
                     </div>
                     <div class="metric-box">
-                        <span class="metric-label">Libraries</span>
-                        <span class="metric-value">Pandas / NumPy</span>
+                        <span class="metric-label">Libs</span>
+                        <span class="metric-value">Scikit, Pandas</span>
                     </div>
                 </div>
 
@@ -101,37 +102,49 @@
                     </div>
                     <div class="metric-box">
                         <span class="metric-label">Version</span>
-                        <span class="metric-value">Git / CI/CD</span>
+                        <span class="metric-value">Git / GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE / CAREER -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Career Data</h2>
+
+            <div class="project-list">
+                <!-- Exp 1 -->
+                <div class="project-card" style="grid-template-columns: 1fr; border-left: 4px solid var(--racing-red);">
+                    <div class="project-content">
+                        <div class="project-meta">Aug 2024 - May 2025 | Authenta AI</div>
+                        <h3>Deep Learning Intern</h3>
+                        <p style="margin-bottom: 0.5rem; color: #fff;">India</p>
+                        <ul
+                            style="color: var(--racing-silver); list-style: square; padding-left: 1.2rem; margin-top: 1rem;">
+                            <li>Developed a Deepfake Detection model using YOLOv8, trained on COCO dataset and custom
+                                bounding-box annotations.</li>
+                            <li>Designed an end-to-end detection pipeline with custom augmentation and pooling layers
+                                using Xception.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Spec 4 -->
-                <div class="grid-item">
-                    <i class="fas fa-eye grid-icon"></i>
-                    <h3>Computer Vision</h3>
-                    <div class="metric-box">
-                        <span class="metric-label">Model</span>
-                        <span class="metric-value">YOLO / CNNs</span>
-                    </div>
-                </div>
-
-                <!-- Spec 5 -->
-                <div class="grid-item">
-                    <i class="fas fa-database grid-icon"></i>
-                    <h3>Data Eng</h3>
-                    <div class="metric-box">
-                        <span class="metric-label">Dataset</span>
-                        <span class="metric-value">COCO / Custom</span>
-                    </div>
-                </div>
-
-                <!-- Spec 6 -->
-                <div class="grid-item">
-                    <i class="fas fa-tachometer-alt grid-icon"></i>
-                    <h3>Optimization</h3>
-                    <div class="metric-box">
-                        <span class="metric-label">Speed</span>
-                        <span class="metric-value">Real-time</span>
+                <!-- Exp 2 -->
+                <div class="project-card"
+                    style="grid-template-columns: 1fr; border-left: 4px solid var(--racing-white);">
+                    <div class="project-content">
+                        <div class="project-meta">May 2025 - Jul 2025 | Foviotech</div>
+                        <h3>AI Research Intern</h3>
+                        <p style="margin-bottom: 0.5rem; color: #fff;">Germany (Remote)</p>
+                        <ul
+                            style="color: var(--racing-silver); list-style: square; padding-left: 1.2rem; margin-top: 1rem;">
+                            <li>Collaborated with Swiss Government on a large-scale solar panel project contributing to
+                                sustainable energy solutions.</li>
+                            <li>Gained exposure to large-scale industrial operations through projects with MAERSK.</li>
+                            <li>Prepared and presented detailed proposals backed by extensive research.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -141,19 +154,20 @@
     <!-- CIRCUITS / PROJECTS -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Track Record</h2>
+            <h2 class="section-title">Circuits & Projects</h2>
 
             <div class="project-list">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/900/FFF?text=Skin+Analysis" class="project-img"
+                    <img src="https://placehold.co/600x400/900/FFF?text=Skin+Disease" class="project-img"
                         alt="Skin Disease">
                     <div class="project-content">
-                        <div class="project-meta">Circuit: Medical AI</div>
+                        <div class="project-meta">Accuracy: 95% | Adam Opt</div>
                         <h3>Skin Disease Detector</h3>
-                        <p>High-precision diagnostic engine using CNNs to classify Melanoma. Engineered for accuracy and
-                            speed in clinical environments.</p>
-                        <a href="#" class="btn btn-secondary" style="width: fit-content;">View Telemetry</a>
+                        <p>Developed a CNN-based model integration to detect skin disease presence. Applied data
+                            augmentation, normalization, and Adam optimization for enhanced precision.</p>
+                        <a href="https://github.com/MLAbishek" target="_blank" class="btn btn-secondary"
+                            style="width: fit-content;"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
@@ -162,25 +176,100 @@
                     <img src="https://placehold.co/600x400/900/FFF?text=Mental+Health" class="project-img"
                         alt="Mental Health">
                     <div class="project-content">
-                        <div class="project-meta">Circuit: NLP & LLM</div>
+                        <div class="project-meta">Transformers | LangChain</div>
                         <h3>Mental Health Analysis</h3>
-                        <p>Multimodal system predicting mood states from voice and text input. Features an integrated
-                            LLM-powered co-pilot for therapeutic support.</p>
-                        <a href="#" class="btn btn-secondary" style="width: fit-content;">View Telemetry</a>
+                        <p>Platform predicting mood from spoken/typed content. Features an AI Companion chatbot, calm
+                            music, and breathing exercises. Leveraged Mistral LangChain.</p>
+                        <a href="https://github.com/MLAbishek" target="_blank" class="btn btn-secondary"
+                            style="width: fit-content;"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/900/FFF?text=Deepfake+Ops" class="project-img"
-                        alt="Deepfake">
+                    <img src="https://placehold.co/600x400/900/FFF?text=Water+Quality" class="project-img"
+                        alt="Water Quality">
                     <div class="project-content">
-                        <div class="project-meta">Circuit: Security</div>
-                        <h3>Deepfake Detection</h3>
-                        <p>Authenta AI pipeline utilizing YOLOv8 and Xception backbones for synthetic media
-                            identifcation. Robust data augmentation strategies deployed.</p>
-                        <a href="#" class="btn btn-secondary" style="width: fit-content;">View Telemetry</a>
+                        <div class="project-meta">Decision Tree | 86% Acc</div>
+                        <h3>Water Quality Classifier</h3>
+                        <p>Classifier system helping to evaluate water cleanliness using scientific parameters.
+                            Implemented DecisionTreeClassifier achieving solid validation performance.</p>
+                        <a href="https://github.com/MLAbishek" target="_blank" class="btn btn-secondary"
+                            style="width: fit-content;"><i class="fab fa-github"></i> View Code</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & ACHIEVEMENTS -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Driver Academy & Podiums</h2>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;" class="grid-container-mobile">
+                <!-- Education -->
+                <div
+                    style="background: var(--racing-dark-grey); padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
+                    <h3
+                        style="font-family: var(--font-header); text-transform: uppercase; font-style: italic; color: var(--racing-red); margin-bottom: 1.5rem;">
+                        Education</h3>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: #fff; font-size: 1.2rem; text-transform: uppercase;">B.Tech AI/ML</h4>
+                        <p style="color: var(--racing-silver);">St. Joseph's College of Engineering</p>
+                        <div class="metric-box" style="margin-top: 0.5rem; border-color: rgba(255,255,255,0.05);">
+                            <span class="metric-label">CGPA</span>
+                            <span class="metric-value">8.87</span>
+                        </div>
+                        <p style="color: var(--racing-silver); font-size: 0.9rem; margin-top: 0.5rem;">Expected 2027</p>
+                    </div>
+
+                    <div>
+                        <h4 style="color: #fff; font-size: 1.2rem; text-transform: uppercase;">Senior Secondary</h4>
+                        <p style="color: var(--racing-silver);">Pon Vidyasharam Unique School</p>
+                        <div class="metric-box" style="margin-top: 0.5rem; border-color: rgba(255,255,255,0.05);">
+                            <span class="metric-label">Score</span>
+                            <span class="metric-value">83.4%</span>
+                        </div>
+                        <p style="color: var(--racing-silver); font-size: 0.9rem; margin-top: 0.5rem;">2023 - 2024</p>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div
+                    style="background: var(--racing-dark-grey); padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
+                    <h3
+                        style="font-family: var(--font-header); text-transform: uppercase; font-style: italic; color: var(--racing-red); margin-bottom: 1.5rem;">
+                        Achievements</h3>
+                    <ul style="color: var(--racing-silver); list-style: none;">
+                        <li
+                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+                            <i class="fas fa-trophy" style="color: var(--racing-red); margin-right: 0.5rem;"></i>
+                            Finalist: SAP HackFest 2025 (Top 70/5200+)
+                        </li>
+                        <li
+                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+                            <i class="fas fa-medal" style="color: var(--racing-white); margin-right: 0.5rem;"></i>
+                            2nd Place: Hack-O-Mania (32 teams)
+                        </li>
+                        <li
+                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+                            <i class="fas fa-star" style="color: var(--racing-silver); margin-right: 0.5rem;"></i>
+                            Top 5: PROJECTFEST-24 (110 teams)
+                        </li>
+                        <li
+                            style="margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+                            <i class="fas fa-flag-checkered"
+                                style="color: var(--racing-red); margin-right: 0.5rem;"></i>
+                            Top 15: Sustain-AI-thon (100+ teams)
+                        </li>
+                        <li>
+                            <i class="fas fa-flag-checkered"
+                                style="color: var(--racing-red); margin-right: 0.5rem;"></i>
+                            Top 8: Datathon (250+ teams)
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -189,14 +278,15 @@
     <!-- FOOTER -->
     <footer id="contact">
         <div class="container">
-            <div class="footer-logo">ABISHEK<span style="color:var(--racing-red);">.SCUDERIA</span></div>
+            <div class="footer-logo">ABISHEK<span style="color:var(--racing-red);"> J</span></div>
             <p style="color:var(--racing-silver); margin-bottom:2rem; letter-spacing:1px; text-transform:uppercase;">
                 Engineering Intelligence from Chennai, India
             </p>
             <div class="socials">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/MLAbishek" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/j-abishek-007-525713d/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:j.abishek3123@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
